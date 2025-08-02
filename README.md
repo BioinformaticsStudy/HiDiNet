@@ -99,25 +99,6 @@ This project uses the English Longitudinal Study of Ageing (ELSA) dataset. To ob
    python <plotting_script>.py
    ```
 
-## Project Structure
-├── transformer/ # Transformer-based HiDiNet implementation
-│ ├── train.py # Main training script
-│ ├── predict.py # Prediction script
-│ ├── model.py # HiDiNet model architecture
-│ ├── encoder.py # Transformer encoder
-│ ├── decoder.py # Transformer decoder
-│ └── Plotting/ # Visualization scripts
-├── DataLoader/ # Data loading utilities
-├── DJIN_Model/ # Original HiDiNet implementation
-├── Comparison_models/ # Baseline models for comparison
-├── Plotting_code/ # Visualization scripts
-├── Data_Parser/ # Data preprocessing scripts
-├── Utils/ # Utility functions
-├── train.py # Original training script
-├── predict.py # Original prediction script
-└── requirements.txt # Python dependencies
-
-
 ## Key Features
 
 - **Mixed Precision Training**: Optimized for faster training and reduced memory usage
