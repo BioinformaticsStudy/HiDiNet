@@ -151,4 +151,4 @@ We welcome contributions! Please feel free to submit issues, feature requests, o
 
 ## Contact
 
-For questions or support, please contact [adhanani@trinity.edu]
+For questions or support, please contact [yzhang@trinity.edu]
