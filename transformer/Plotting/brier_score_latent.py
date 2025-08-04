@@ -173,7 +173,7 @@ results.reset_index(inplace=True)
 plot = sns.scatterplot(data=results,x='N',y='IBS')
 plot.set_xlabel('Model dimension', fontsize=14)
 plot.set_ylabel('Integrated Brier Score', fontsize=14)
-plt.ylim(.2,1.6)
+plt.ylim(.2,1.0)
 
 if djin_compare and lamp_compare:
     custom_legend = []
