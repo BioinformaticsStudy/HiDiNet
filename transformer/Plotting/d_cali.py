@@ -176,19 +176,19 @@ def plot_HiDiNet_with_all_stats():
     bin_index = np.arange(0, len(bin_labels))
 
     # Show HiDiNet-T bars
-    plt.barh(bin_labels, uncen_buckets_lamp + cen_buckets_lamp, height=0.98, color=cm(1), label='HiDiNet-T')
+    plt.barh(bin_labels, uncen_buckets_lamp + cen_buckets_lamp, height=0.98, color=cm(1), label='HiDiNet')
     plt.errorbar(uncen_buckets_lamp + cen_buckets_lamp, bin_index, xerr=error_buckets_lamp, 
                 color='k', zorder=10000000, linestyle='')
 
     # Add statistics for ALL models (matching original layout)
-    ax.text(.7, 0.77, r'HiDiNet-T', horizontalalignment='left', verticalalignment='center',
+    ax.text(.7, 0.77, r'HiDiNet', horizontalalignment='left', verticalalignment='center',
             transform=ax.transAxes, color='k', fontsize=12, zorder=1000000)
     ax.text(.7, 0.71, r'$\chi^2 = {%.1f}$' % statistic_lamp, horizontalalignment='left', verticalalignment='center',
             transform=ax.transAxes, color='k', fontsize=14, zorder=1000000)
     ax.text(.7, 0.65, r'$p={%.3f}$' % pval_lamp, horizontalalignment='left', verticalalignment='center',
             transform=ax.transAxes, color='k', fontsize=14, zorder=1000000)
 
-    ax.text(.7, 0.55, r'HiDiNet', horizontalalignment='left', verticalalignment='center',
+    ax.text(.7, 0.55, r'RNN', horizontalalignment='left', verticalalignment='center',
             transform=ax.transAxes, color='k', fontsize=12, zorder=1000000)
     ax.text(.7, 0.49, r'$\chi^2 = {%.1f}$' % statistic_mdiin, horizontalalignment='left', verticalalignment='center',
             transform=ax.transAxes, color='k', fontsize=14, zorder=1000000)

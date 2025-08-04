@@ -274,12 +274,12 @@ fig,ax = plt.subplots(figsize=(4.5,4.5))
 # plt.plot(bin_centers, overall_cindex_djin*np.ones(bin_centers.shape), color = cm(0), linewidth = 2.5, label = '')
 
 overall_cindex_lamp = cindex_td(death_ages, lamp[:,:,1], lamp[:,:,0], 1 - censored)
-plt.plot(bin_centers, c_index_list_lamp, marker = 'v',color=cm(1), markersize=8, linestyle = '', label = f'HiDiNet-T')
+plt.plot(bin_centers, c_index_list_lamp, marker = 'v',color=cm(1), markersize=8, linestyle = '', label = f'HiDiNet')
 plt.plot(bin_centers, overall_cindex_lamp*np.ones(bin_centers.shape), color = cm(1), linewidth = 2.5, label = '')
 
 
 overall_cindex_mdiin = cindex_td(death_ages, survival_mdiin[:,:,1], survival_mdiin[:,:,0], 1 - censored)
-plt.plot(bin_centers, c_index_list_mdiin, marker = 'o',color=cm(4), markersize=8, linestyle = '', label = f'HiDiNet')
+plt.plot(bin_centers, c_index_list_mdiin, marker = 'o',color=cm(4), markersize=8, linestyle = '', label = f'RNN')
 plt.plot(bin_centers, overall_cindex_mdiin*np.ones(bin_centers.shape), color = cm(4), linewidth = 2.5, label = '')
 
 

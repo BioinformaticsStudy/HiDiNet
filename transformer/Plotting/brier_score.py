@@ -205,8 +205,8 @@ BS_t_linear = (BS_linear/BS_count_linear)
 # Create the plot
 fig,ax = plt.subplots(figsize=(4.5,4.5))
 
-plt.plot(bin_centers[bin_centers>=60], BS_t_lamp[bin_centers>=60], color = cm(1), label = 'HiDiNet-T', linewidth = 2.5)
-plt.plot(bin_centers[bin_centers>=60], BS_t_mdiin[bin_centers>=60], color = cm(4), label = 'HiDiNet model', linewidth = 2.5)
+plt.plot(bin_centers[bin_centers>=60], BS_t_lamp[bin_centers>=60], color = cm(1), label = 'HiDiNet', linewidth = 2.5)
+plt.plot(bin_centers[bin_centers>=60], BS_t_mdiin[bin_centers>=60], color = cm(4), label = 'RNN', linewidth = 2.5)
 plt.plot(bin_centers[bin_centers>=60], BS_t_linear[bin_centers>=60], color = cm(2), label = 'Elastic-net Cox', linewidth = 2.5, linestyle = '--')
 
 # Calculate Integrated Brier Scores (IBS)
