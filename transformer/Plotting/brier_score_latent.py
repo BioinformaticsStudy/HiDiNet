@@ -184,8 +184,8 @@ if djin_compare and lamp_compare:
         plt.Line2D([], [], marker='v', color='b',
                    markersize=8, linestyle='None'))
     custom_legend.append(plt.Line2D([], [], marker='o', color='orange', linestyle='None'))
-    labels.append('HiDiNet‑T')
     labels.append('HiDiNet')
+    labels.append('RNN')
     if linear_IBS is not None:
         plt.plot([0,args.stop],[linear_IBS,linear_IBS],linestyle='--',color='g')
         custom_legend.append(plt.Line2D([], [], color='g', linestyle='--'))
