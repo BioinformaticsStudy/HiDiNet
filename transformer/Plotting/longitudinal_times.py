@@ -252,8 +252,8 @@ handles  = [
                alpha=.6,label='2‑yr self‑report waves'),
     plt.Line2D([0],[0],marker='s',lw=0,color='k',markerfacecolor=cm2(3),
                alpha=.6,label='4‑yr nurse waves'),
-    plt.Line2D([0],[0],marker='v',color=cm(1),lw=0,label='HiDiNet‑T median'),
-    plt.Line2D([0],[0],marker='o',color=cm(4),lw=0,label='MDiiN median'),
+    plt.Line2D([0],[0],marker='v',color=cm(1),lw=0,label='HiDiNet median'),
+    plt.Line2D([0],[0],marker='o',color=cm(4),lw=0,label='RNN median'),
     
 ]
 if not args.no_compare:

@@ -273,8 +273,8 @@ fig,ax = plt.subplots(figsize=(6.2,5))
 
 deficits_small = np.array(['Gait speed', 'Dom Grip strength', 'Non-dom grip str', 'ADL score','IADL score', 'Chair rises','Leg raise','Full tandem stance', 'Self-rated health', 'Eyesight','Hearing', 'Walking ability', 'Diastolic blood pressure', 'Systolic blood pressure', 'Pulse', 'Triglycerides','C-reactive protein','HDL cholesterol','LDL cholesterol','Glucose','IGF-1','Hemoglobin','Fibrinogen','Ferritin', 'Total cholesterol', r'White blood cell count', 'MCH', 'Glycated hemoglobin', 'Vitamin-D'])
 
-ax.errorbar(np.arange(N)+1, RMSE_sort_missing[:,3], marker = 'v',color = cm(1), markersize = 6, linestyle = '', label = 'HiDiNet-T', zorder= 10000000-1)
-ax.errorbar(np.arange(N)+1, RMSE_sort_missing[:,1], marker = '*',color = cm(4),markersize = 6, linestyle = '', label = 'HiDiNet', zorder= 10000000)
+ax.errorbar(np.arange(N)+1, RMSE_sort_missing[:,3], marker = 'v',color = cm(1), markersize = 6, linestyle = '', label = 'HiDiNet', zorder= 10000000-1)
+ax.errorbar(np.arange(N)+1, RMSE_sort_missing[:,1], marker = '*',color = cm(4),markersize = 6, linestyle = '', label = 'RNN', zorder= 10000000)
 ax.errorbar(np.arange(N)+1, RMSE_sort_missing[:,4], marker = 's',color = cm(2),markersize = 5, linestyle = '', label = 'Elastic-net linear models', zorder= 10000)
 ax.errorbar(np.arange(N)+1, RMSE_sort_missing[:,5], marker = 'D',color = cm(0), markersize = 5, linestyle = '', label = 'Static model imputed baseline', zorder= 2)
 
@@ -311,8 +311,8 @@ fig,ax = plt.subplots(figsize=(6.2,5))
 
 deficits_small = np.array(['Gait speed', 'Dom Grip strength', 'Non-dom grip str', 'ADL score','IADL score', 'Chair rises','Leg raise','Full tandem stance', 'Self-rated health', 'Eyesight','Hearing', 'Walking ability', 'Diastolic blood pressure', 'Systolic blood pressure', 'Pulse', 'Triglycerides','C-reactive protein','HDL cholesterol','LDL cholesterol','Glucose','IGF-1','Hemoglobin','Fibrinogen','Ferritin', 'Total cholesterol', r'White blood cell count', 'MCH', 'Glycated hemoglobin', 'Vitamin-D'])
 
-ax.errorbar(np.arange(N)+1, RMSE_sort_notmissing[:,3], marker = 'v',color = cm(1), markersize = 6, linestyle = '', label = 'HiDiNet-T', zorder= 10000000-1)
-ax.errorbar(np.arange(N)+1, RMSE_sort_notmissing[:,1], marker = '*',color = cm(4),markersize = 6, linestyle = '', label = 'HiDiNet', zorder= 10000000)
+ax.errorbar(np.arange(N)+1, RMSE_sort_notmissing[:,3], marker = 'v',color = cm(1), markersize = 6, linestyle = '', label = 'HiDiNet', zorder= 10000000-1)
+ax.errorbar(np.arange(N)+1, RMSE_sort_notmissing[:,1], marker = '*',color = cm(4),markersize = 6, linestyle = '', label = 'RNN', zorder= 10000000)
 ax.errorbar(np.arange(N)+1, RMSE_sort_notmissing[:,4], marker = 's',color = cm(2),markersize = 5, linestyle = '', label = 'Elastic-net linear models', zorder= 10000)
 ax.errorbar(np.arange(N)+1, RMSE_sort_notmissing[:,5], marker = 'D',color = cm(0), markersize = 5, linestyle = '', label = 'Static observed baseline', zorder= 2)
 
