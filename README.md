@@ -1,6 +1,6 @@
 # HiDiNet: Hierarchical Diffusion Network for Healthcare Time Series Modeling
 
-HiDiNet is a state-of-the-art deep learning framework for modeling healthcare time series data, combining Variational Autoencoders (VAE), Stochastic Differential Equations (SDE), Transformer architectures, and Memory Networks to predict health trajectories and survival probabilities.
+HiDiNet is a state-of-the-art deep learning framework for modeling healthcare time series data, combining Variational Autoencoders (VAE), Stochastic Differential Equations (SDE), and Transformer architectures to predict health trajectories and survival probabilities.
 
 ## Overview
 
@@ -8,7 +8,6 @@ HiDiNet integrates multiple advanced deep learning components:
 - **Variational Autoencoders (VAE)** with Normalizing Flows for latent representation learning
 - **Stochastic Differential Equations (SDE)** for modeling disease dynamics and temporal evolution
 - **Transformer Architecture** for capturing long-range temporal dependencies
-- **Memory Networks** for maintaining patient-specific context
 - **Survival Analysis** components for mortality risk prediction
 
 ## Installation
